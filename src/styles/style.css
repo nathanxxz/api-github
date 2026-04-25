@@ -1,80 +1,74 @@
-:root{
---gray-100: #f0f6fc;
---gray-200: #c9d1d9;
---gray-300: #8b949e;
---gray-400: #f0f6fc1a;
+:root {
+    --gray-100: #f0f6fc;
+    --gray-200: #c9d1d9;
+    --gray-300: #8b949e;
+    --gray-400: #f0f6fc1a;
 
---black-100: #30363d;
---black-200: #21262d;
---black-300: #161b22;
---black-400: #0d1117;
---black-500: #010409;
+    --black-100: #30363d;
+    --black-200: #21262d;
+    --black-300: #161b22;
+    --black-400: #0d1117;
+    --black-500: #010409;
 
---green-100: #2ea043;
---green-200: #238636;
+    --green-100: #2ea043;
+    --green-200: #238636;
 
---whinte-100: #fff;
-
-
+    --white-100: #fff;
 }
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: var(--black-500);
-
 }
 
-body, input, button{
+body, input, button {
     color: var(--gray-200);
+   
+    font-size: 16px;
 }
 
-button{
+button {
     cursor: pointer;
 }
 
-li{
+li {
     list-style-type: none;
 }
 
-.header-container{
+.header-container {
     background-color: var(--black-400);
-
 }
 
-.header-content{
+.header-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
     max-width: 1180px;
     margin: 0 auto;
     padding: 16px;
-
 }
 
+.header-content img {
+    width: 40px;
+    height: auto;
+}
 
-.titulo-p{
+.titulo-p {
     color: var(--gray-100);
 }
 
-.header-content{
-    width: 40px;
-    height: auto;
-
-}
-
-main{
+main {
     max-width: 1180px;
     margin: 0 auto 80px;
     padding: 0 16px;
 }
 
-
-.form-p{
+.form-p {
     margin-top: 40px;
     display: flex;
     justify-content: center;
@@ -82,7 +76,7 @@ main{
 }
 
 
-.buscar{
+.input-p {
     width: 240px;
     padding: 12px;
     background-color: var(--black-400);
@@ -91,24 +85,26 @@ main{
     border-bottom-left-radius: 6px;
 }
 
-button[type="submit"]{
-   background-color: var(--green-100);
-   color: var(--whinte-100);
-   font-weight: bold;
-   padding: 16px;
-   border: 1px solid var(--green-100);
-   border-top-right-radius: 6px;
-   border-bottom-right-radius: 6px;
-   
-   transition: 0.2s;
-
+button[type="submit"] {
+    background-color: var(--green-100);
+    color: var(--white-100);
+    font-weight: bold;
+    padding: 16px;
+    border: 1px solid var(--green-100);
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    transition: 0.2s;
 }
- button[type="submit"]:hover{
+
+button[type="submit"]:hover {
     background-color: var(--green-200);
 }
 
+.hide {
+    display: none;
+}
 
-.container-s{
+.container-s {
     margin-top: 80px;
     display: flex;
     flex-direction: column;
@@ -116,62 +112,57 @@ button[type="submit"]{
     gap: 64px;
 }
 
-
-.user{
+.user {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 32px;
 }
 
-
-.perfil{
+.perfil {
     width: 140px;
     height: auto;
     border-radius: 50%;
     border: 2px solid var(--gray-200);
 }
 
-
-.informacoes{
-    font-size: 8px;
+.informacoes {
+    font-size: 16px;
 }
 
-
-.user-r{
+.user-r {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 32px; 
+    gap: 32px;
 }
 
-
-.user-repor{
+.user-repor {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 16px;
 }
 
-
-.repo{
+.repo {
     background-color: var(--black-400);
     padding: 16px;
     border: 1px solid var(--black-300);
     border-radius: 6px;
 }
 
-.user-repor header{
+.user-repor header {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.titutlo-repo{
+
+.titulo-repo {
     font-size: 20px;
 }
 
-.link-repo{
+.link-repo {
     background-color: var(--black-200);
     color: var(--gray-200);
     border: 1px solid var(--gray-300);
@@ -180,17 +171,16 @@ button[type="submit"]{
     padding: 8px 16px;
 }
 
-.link-repo:hover{
+.link-repo:hover {
     background-color: var(--black-100);
     border-color: var(--gray-300);
 }
 
-.descricao-repo{
+
+.des {
     margin: 16px 0;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
     max-width: 530px;
-
 }
-    

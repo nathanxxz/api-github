@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/styles/style.css">
-    <script src="/src/js/index.js" async></script>
+
+    <script src="/src/js/index.js" defer></script>
+
     <title>Buscar GitHub</title>
 </head>
 
@@ -15,102 +17,42 @@
             <h1 class="titulo-p">
                 Analisar GitHub
             </h1>
-            <img src="/src/public/img/logoGitHub.png" alt="imagem-gitHub">
+            <img src="/src/public/img/logoGitHub.png" alt="Logo GitHub" width="40" height="40">
         </div>
     </header>
+
     <main>
         <form class="form-p">
-            <input type="text" id="buscar" placeholder="Pesquise o perfil de um usuario" required>]
+            <input type="text" class="input-p" id="buscar" placeholder="Pesquise o perfil de um usuario" required>
             <button type="submit">Buscar</button>
         </form>
 
-        <section class="container-s">
+        <section class="container-s hide">
             <div class="user">
-                <img class="perfil" src="" alt="">
-
+                <img class="perfil" alt="">
             </div>
 
             <div class="user-r">
                 <h2>Repositorios atualizados recentemente</h2>
-
-                <ul class="user-repor">
-                    <li class="repo">
-                        <header>
-                            <strong class="titulo-repo">Carrosel-de-imagens</strong>
-                            <a class="link-repo" target="_blank" href="">Ir para o repo</a>
-                            <p class="descricao-repo">descricaooooo</p>
-                            <div class="cri">Criado em:
-                                <span class="data">10/10/10</span>
-                            </div>
-                        </header>
-
-
-                    </li>
-
-                    <li class="repo">
-                        <header>
-                            <strong class="titulo-repo">Carrosel-de-imagens</strong>
-                            <a class="link-repo" target="_blank" href="">Ir para o repo</a>
-                            <p class="descricao-repo">descricaooooo</p>
-                            <div class="cri">Criado em:
-                                <span class="data">10/10/10</span>
-                            </div>
-                        </header>
-
-
-                    </li>
-
-                    <li class="repo">
-                        <header>
-                            <strong class="titulo-repo">Carrosel-de-imagens</strong>
-                            <a class="link-repo" target="_blank" href="">Ir para o repo</a>
-                            <p class="descricao-repo">descricaooooo</p>
-                            <div class="cri">Criado em:
-                                <span class="data">10/10/10</span>
-                            </div>
-                        </header>
-
-
-                    </li>
-
-                    <li class="repo">
-                        <header>
-                            <strong class="titulo-repo">Carrosel-de-imagens</strong>
-                            <a class="link-repo" target="_blank" href="">Ir para o repo</a>
-                            <p class="descricao-repo">descricaooooo</p>
-                            <div class="cri">Criado em:
-                                <span class="data">10/10/10</span>
-                            </div>
-                        </header>
-
-
-                    </li>
-
-                </ul>
-
+                <ul class="user-repor"></ul>
             </div>
 
             <div class="informacoes">
                 Nome:
-                <span class="user-n">Batman</span>
-
+                <span class="user-n"></span>
             </div>
             <div class="informacoes">
                 Username:
-                <span class="user-l">batman</span>
-
+                <span class="user-l"></span>
             </div>
             <div class="informacoes">
                 Seguidores:
-                <span class="user-f">Batman</span>
-
+                <span class="user-f"></span>
             </div>
             <div class="informacoes">
                 Biografia:
-                <span class="user-b">eu sou o batman</span>
-
+                <span class="user-b"></span>
             </div>
-
         </section>
     </main>
 </body>
