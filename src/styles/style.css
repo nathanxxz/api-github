@@ -1,0 +1,163 @@
+:root{
+--gray-100: #f0f6fc;
+--gray-200: #c9d1d9;
+--gray-300: #8b949e;
+--gray-400: #f0f6fc1a;
+
+--black-100: #30363d;
+--black-200: #21262d;
+--black-300: #161b22;
+--black-400: #0d1117;
+--black-500: #010409;
+
+--green-100: #2ea043;
+--green-200: #238636;
+
+--whinte-100: #fff;
+
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--black-500);
+
+}
+
+body, input, button{
+    color: var(--gray-200);
+}
+
+button{
+    cursor: pointer;
+}
+
+li{
+    list-style-type: none;
+}
+
+.header-container{
+    background-color: var(--black-400);
+
+}
+
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 16px;
+
+}
+
+
+.titulo-p{
+    color: var(--gray-100);
+}
+
+.header-content{
+    width: 40px;
+    height: auto;
+
+}
+
+main{
+    max-width: 1180px;
+    margin: 0 auto 80px;
+    padding: 0 16px;
+}
+
+
+.form-p{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    height: 48px;
+}
+
+
+.buscar{
+    width: 240px;
+    padding: 12px;
+    background-color: var(--black-400);
+    border: 1px solid var(--black-200);
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+button[type="submit"]{
+   background-color: var(--green-100);
+   color: var(--whinte-100);
+   font-weight: bold;
+   padding: 16px;
+   border: 1px solid var(--green-100);
+   border-top-right-radius: 6px;
+   border-bottom-right-radius: 6px;
+   
+   transition: 0.2s;
+
+}
+ button[type="submit"]:hover{
+    background-color: var(--green-200);
+}
+
+
+.container-s{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;
+}
+
+
+.user{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+
+.perfil{
+    width: 140px;
+    height: auto;
+    border-radius: 50%;
+    border: 2px solid var(--gray-200);
+}
+
+
+.informacoes{
+    font-size: 8px;
+}
+
+
+.user-r{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px; 
+}
+
+
+.user-repor{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+
+.repo{
+    background-color: var(--black-400);
+    padding: 16px;
+    border: 1px solid var(--black-300);
+    border-radius: 6px;
+}
+    
