@@ -46,6 +46,22 @@ function displayUser(userData, userRepo) {
 
         const link = document.createElement("a")
         link.classList.add("link-repo")
-        
+        link.href = repositorio.html_url
+        link.target = "_blank"
+        link.textContent = "Ir para o repo"
+        header.appendChild(link)
+
+        const descricao = document.createElement("p")
+        descricao.classList.add("des")
+        descricao.textContent = repoTitulo.descricao
+        userRepoLi.appendChild(descricao)
+
+        const criarContainer = document.createElement("div")
+        criarContainer.classList("cri")
+        criarContainer.textContent = "Criado em:"
+        userRepoLi.appendChild(criarContainer)
+
+
+
     });
 }
