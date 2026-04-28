@@ -24,8 +24,7 @@ buscarUsuario.addEventListener("submit", async (e) => {
         e.target.querySelector("#buscar").value = ""
 
     } catch (error) {
-        console.error("Erro ao buscar:", error)
-        alert("Algo deu errado. Tente novamente.")
+        throw new Error(`Erro em buscar usuario ${error}`)
     }
 })
 
@@ -42,8 +41,7 @@ async function verUsuario(username) {
         return data
 
     } catch (error) {
-        console.error("Erro em verUsuario:", error)
-        throw error
+        throw new Error(`Erro em ver usuario ${error}`)
     }
 }
 
@@ -54,15 +52,15 @@ async function verRepositorios(username) {
         )
 
         if (!response.ok) {
-            throw new Error("Erro ao buscar repositorios")
+            throw new Error("Erro ao buscar repositorio")
         }
 
         const data = await response.json()
         return data
 
     } catch (error) {
-        console.error("Erro em verRepositorios:", error)
-        throw error
+        throw new Error(`Erro em ver o repositorio ${error}`)
+
     }
 }
 
@@ -118,7 +116,7 @@ function displayUser(userData, userRepo) {
                     userRepoContent.appendChild(userRepoLi)
 
                 } catch (error) {
-                    console.error("Erro ao renderizar repo:", repositorio.name, error)
+                    throw new Error(`Erro ao renderizar repositorios do usuario ${error}`)
                 }
             })
         } else {
@@ -127,8 +125,7 @@ function displayUser(userData, userRepo) {
         }
 
     } catch (error) {
-        console.error("Erro em displayUser:", error)
-        alert("Erro ao exibir os dados do usuario.")
+        throw new Error(`Erro ao mostrar dados do usuario ${error}`)
     }
 }
 
@@ -140,6 +137,6 @@ function resetForm() {
             userRepoContent.removeChild(userRepoContent.firstChild)
         }
     } catch (error) {
-        console.error("Erro em resetForm:", error)
+        throw new Error(`Erro ao resetar o formulario ${error}`)
     }
 }
