@@ -100,10 +100,6 @@ button[type="submit"]:hover {
     background-color: var(--green-200);
 }
 
-.hide {
-    display: none;
-}
-
 .container-s {
     margin-top: 80px;
     display: flex;
@@ -111,6 +107,11 @@ button[type="submit"]:hover {
     align-items: center;
     gap: 64px;
 }
+
+.hide {
+    display: none;
+}
+
 
 .user {
     display: flex;
